@@ -1,3 +1,6 @@
+![clima-foto](https://user-images.githubusercontent.com/79880373/167711345-19f17fbd-1943-4a05-9fa0-5bb5b4d53c69.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

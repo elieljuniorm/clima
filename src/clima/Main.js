@@ -31,7 +31,7 @@ function Main() {
 
     if(location === false){
         return(
-            <><div className = { styles.container }><h1 className={styles.tituloSemgps}>Você precisa Habilitar a localização no browser e atualizar a página.</h1></div></>
+            <><div className = { styles.container }><h1 className={styles.tituloSemgps}>Você precisa habilitar a localização no browser e atualizar a página.</h1></div></>
         )
     }else if(weather === false){
         <><div className = { styles.container }><h2 className={styles.tituloCarregando}>Carregando o clima...</h2></div></>

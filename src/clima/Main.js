@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './Main.module.css'
 import axios from 'axios';
 function Main() {
-    /* usestate roda para pedir a localização */
+    /* usestate pede a localização */
     const [location,setLocation] = useState(false);
 
     /* armazena os dados da api */

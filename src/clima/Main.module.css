@@ -1,18 +1,72 @@
+.container{
+    height: 100vh;
+    background: linear-gradient(#203c46, #0e7876);
+}
 .tituloSemgps{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    padding-top: 50%;
+    margin: 0em 1em;
+    color: antiquewhite;
 }
 .tituloCarregando{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    padding-top: 50%;
+    margin: 0em 1em;
+    color: antiquewhite;
 }
-.titulo{
-    font-size: 2em;
+.titulo {
+    font-size: 1.5em;
     text-align: center;
+    padding-top: 50%;
+    margin: 0em 1em;
+    color: antiquewhite;
 }
 .listaInfo{
-   text-align: center; 
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.2);
+   padding: 1em;
+   margin: 2em 2em;
+   border-radius: 8px;
+   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 .info{
     font-size: 1.5em;
+    list-style: none;
+    color: antiquewhite;
+    line-height: 1.5;
+}
+@media only screen and (min-width: 700px) and (max-width: 1149px){
+    .tituloSemgps{
+        padding-top: 5em; 
+        font-size: 2em;
+    }
+    .tituloCarregando{
+        padding-top: 5em;
+        font-size: 2em;
+    }
+    .titulo {
+        padding-top: 5em;
+        font-size: 2em;
+    }
+    .listaInfo{
+        margin: 2em 10em;
+     } 
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1900px){
+    .tituloSemgps{ 
+        padding-top: 5em;
+    }
+    .tituloCarregando{
+        padding-top: 5em;
+    }
+    .titulo {
+        padding-top: 5em;
+    }
+    .listaInfo{
+        padding: 1em;
+        margin: 2em 25em;
+     } 
 }

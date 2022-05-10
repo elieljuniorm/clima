@@ -31,28 +31,30 @@ function Main() {
 
     if(location === false){
         return(
-            <><h1 className={styles.tituloSemgps}>Você precisa Habilitar a localização no browser!</h1></>
+            <><div className = { styles.container }><h1 className={styles.tituloSemgps}>Você precisa Habilitar a localização no browser e atualizar a página.</h1></div></>
         )
     }else if(weather === false){
-        <><h2 className={styles.tituloCarregando}>Carregando o clima...</h2></>
+        <><div className = { styles.container }><h2 className={styles.tituloCarregando}>Carregando o clima...</h2></div></>
     }else{
         return(
             <>
-                <h3 className={styles.titulo}>Clima nas suas coordenadas ({weather['weather'][0]['description']})</h3>
-                
-                <ul className={styles.listaInfo}>
+                <div className = { styles.container }>
+                    <h3 className={styles.titulo}>Clima nas suas Coordenadas ({weather['weather'][0]['description']})</h3>
+                    
+                    <ul className={styles.listaInfo}>
 
-                    <li className={styles.info}>Temperatura atual: {weather['main']['temp']}°</li>
+                        <li className={styles.info}>Temperatura atual: {weather['main']['temp']}°</li>
 
-                    <li className={styles.info}>Temperatura máxima: {weather['main']['temp_max']}°</li>
+                        <li className={styles.info}>Temperatura máxima: {weather['main']['temp_max']}°</li>
 
-                    <li className={styles.info}>Temperatura mínima: {weather['main']['temp_min']}°</li>
+                        <li className={styles.info}>Temperatura mínima: {weather['main']['temp_min']}°</li>
 
-                    <li className={styles.info}>Pressão: {weather['main']['pressure']} hpa</li>
+                        <li className={styles.info}>Pressão: {weather['main']['pressure']} hpa</li>
 
-                    <li className={styles.info}>Umidade: {weather['main']['humidity']}%</li>
+                        <li className={styles.info}>Umidade: {weather['main']['humidity']}%</li>
 
-                </ul>
+                    </ul>
+                </div>
             </>
         )
     }

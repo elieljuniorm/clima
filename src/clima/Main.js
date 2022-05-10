@@ -13,7 +13,7 @@ function Main() {
             params: {
                 lat: lat,
                 lon: long,
-                appid: process.env.REACT_APP_OPEN_WEATHER_KEY,
+                appid: process.env.REACT_APP_OPEN_WHEATHER_KEY,
                 lang: 'pt',
                 units: 'metric'
             }
@@ -29,11 +29,11 @@ function Main() {
         })
     }, [/* usado para chamar somente quando for aberto */]);
 
-    if(location == false){
+    if(location === false){
         return(
             <>Você precisa Habilitar a localização no browser!</>
         )
-    }else if(weather == false){
+    }else if(weather === false){
         <>Carregando o clima...</>
     }else{
         return(
@@ -42,15 +42,15 @@ function Main() {
                 <hr/>
                 <ul>
 
-                    <li>Temperatura atual: {weather['main'][0]['temp']}°</li>
+                    <li>Temperatura atual: {weather['main']['temp']}°</li>
 
-                    <li>Temperatura máxima: {weather['main'][0]['temp_max']}°</li>
+                    <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
 
-                    <li>Temperatura mínima: {weather['main'][0]['temp_min']}°</li>
+                    <li>Temperatura mínima: {weather['main']['temp_min']}°</li>
 
-                    <li>Pressão: {weather['main'][0]['pressure']} hpa</li>
+                    <li>Pressão: {weather['main']['pressure']} hpa</li>
 
-                    <li>Umidade realativa: {weather['main'][0]['humidity']}%</li>
+                    <li>Umidade realativa: {weather['main']['humidity']}%</li>
 
                 </ul>
             </>

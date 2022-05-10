@@ -1,6 +1,6 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-
+import styles from './Main.module.css'
+import axios from 'axios';
 function Main() {
     /* usestate roda para pedir a localização */
     const [location,setLocation] = useState(false);
@@ -31,26 +31,26 @@ function Main() {
 
     if(location === false){
         return(
-            <>Você precisa Habilitar a localização no browser!</>
+            <><h1 className={styles.tituloSemgps}>Você precisa Habilitar a localização no browser!</h1></>
         )
     }else if(weather === false){
-        <>Carregando o clima...</>
+        <><h2 className={styles.tituloCarregando}>Carregando o clima...</h2></>
     }else{
         return(
             <>
-                <h3>Clima nas suas Coordenadas ({weather['weather'][0]['description']})</h3>
-                <hr/>
-                <ul>
+                <h3 className={styles.titulo}>Clima nas suas coordenadas ({weather['weather'][0]['description']})</h3>
+                
+                <ul className={styles.listaInfo}>
 
-                    <li>Temperatura atual: {weather['main']['temp']}°</li>
+                    <li className={styles.info}>Temperatura atual: {weather['main']['temp']}°</li>
 
-                    <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
+                    <li className={styles.info}>Temperatura máxima: {weather['main']['temp_max']}°</li>
 
-                    <li>Temperatura mínima: {weather['main']['temp_min']}°</li>
+                    <li className={styles.info}>Temperatura mínima: {weather['main']['temp_min']}°</li>
 
-                    <li>Pressão: {weather['main']['pressure']} hpa</li>
+                    <li className={styles.info}>Pressão: {weather['main']['pressure']} hpa</li>
 
-                    <li>Umidade realativa: {weather['main']['humidity']}%</li>
+                    <li className={styles.info}>Umidade: {weather['main']['humidity']}%</li>
 
                 </ul>
             </>

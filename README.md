@@ -1,4 +1,4 @@
-![clima-foto](https://user-images.githubusercontent.com/79880373/167711345-19f17fbd-1943-4a05-9fa0-5bb5b4d53c69.png)
+![Captura de tela 2022-05-19 - 19 36 53](https://user-images.githubusercontent.com/79880373/169415895-c7e7d1c2-363b-411b-aecf-4d9435bc207b.png)
 
 
 # Getting Started with Create React App
